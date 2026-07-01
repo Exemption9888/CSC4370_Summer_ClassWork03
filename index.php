@@ -11,6 +11,8 @@ echo '<p>Options: ' . htmlspecialchars(implode(', ', $options)) . '</p>';
 
 echo '<h2>All Form Data</h2>';
 echo '<pre>';
-print_r($_POST);
+foreach ( $_POST as $key => $value ) {
+    echo '<p>Options: ' . htmlspecialchar( implode( ', ', $$value ) ) . '</p>';
+}
 echo '</pre>';
 ?>
