@@ -1,0 +1,9 @@
+Team Member Name
+Team Member: Simon Luu
+
+GitHub Repository URL
+https://github.com/Exemption9888/CSC4370_Summer_ClassWork03
+
+CODD Live Deployment URL
+https://codd.cs.gsu.edu/~sluu5/wp/cw/3/debug-form-handler.html
+https://codd.cs.gsu.edu/~sluu5/wp/cw/3/debug-form-handler.php
