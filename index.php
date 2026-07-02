@@ -12,7 +12,16 @@ echo '<p>Options: ' . htmlspecialchars(implode(', ', $options)) . '</p>';
 echo '<h2>All Form Data</h2>';
 echo '<pre>';
 foreach ( $_POST as $key => $value ) {
-    echo '<p>Options: ' . htmlspecialchars( implode( ', ', $$value ) ) . '</p>';
+    echo '<p>' . $key . ': ';
+    if ( is_array( $value ) ) {
+        foreach ( $value as $sub_value ) {
+            echo '<br>    ' . $sub_value;
+        }
+    }
+    else {
+        echo "$value";
+    }
+    echo '</p>';
 }
 echo '</pre>';
 ?>
