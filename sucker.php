@@ -8,6 +8,18 @@
 <p>Card Type: <?= htmlspecialchars($_POST['cardtype'] ?? '') ?></p>
 
 <?php
+$required = ['name', 'section', 'cardnumber', 'cardtype'];
+
+foreach ($required as $field) {
+    if (!isset($_POST[$field]) || trim($_POST[$field]) === '') {
+        echo '<h1>Sorry</h1>';
+        echo '<p>You did not fill out the form completely. <a href="buyagrade.html">Try again?</a></p>';
+        exit;
+    }
+}
+?>
+
+<?php
 $name = trim($_POST['name'] ?? '');
 $section = trim($_POST['section'] ?? '');
 $cardnumber = trim($_POST['cardnumber'] ?? '');
